@@ -3,6 +3,7 @@
 :root{
     --paleblue: #e0e8ff;
     --brightblue: #3829e0;
+    --brightbluesombra: #3829e02d;
     --verypaleblue: #f5f7ff;
     --desaturatedblue: #7280a7;
     --darkblue: #1f2f56;
@@ -33,14 +34,43 @@ body{
         background-image: url(../images/illustration-hero.svg);
         width: 100%;
         height: 220px;
+        margin-top: 50px;
         border-radius: 15px 15px 0 0 ;
     }
     .descricao{
         text-align: center;
-        background-color: var(--verypaleblue);
+        background-color: white;
+        border-radius: 0 0 15px 15px;
     }
     .descricao h1{
         margin: 20px;
         font-weight: 900;
+    }
+    .detalhes{
+        margin: 25px 10px 25px 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--desaturatedblue);
+    }
+    .plano{
+        margin: 25px 0 25px 0;
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        margin: 25px 0 25px 0;
+        font-size: 18px;
+        font-weight: bolder;
+        color: var(--verypaleblue);
+        background-color: var(--brightblue);
+        width: 90%;
+        height: 50px;
+        box-shadow: 1px 15px 10px 1px var(--brightbluesombra);
+    }
+    .cancelar{
+        margin: 10px 0 35px 0;
+        font-size: 16px;
+        font-weight: 900;
+        color: var(--desaturatedblue);
     }
 }
