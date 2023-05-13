@@ -24,6 +24,21 @@ body{
     background: url(../images/illustration-hero.svg) repeat-x;
 }
 
+ul{
+    list-style: none;
+}
+
+.lista{
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;        
+}
+
+.musicaicon{
+    background: url(../images/icon-music.svg) repeat-y;
+}
+
 @media (min-width: 350px) {    
     main{
         padding: 20px;
