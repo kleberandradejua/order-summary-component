@@ -2,6 +2,7 @@
 
 :root{
     --paleblue: #e0e8ff;
+    --palebluefundo: #e0e8ff41;
     --brightblue: #3829e0;
     --brightbluesombra: #3829e02d;
     --verypaleblue: #f5f7ff;
@@ -19,24 +20,47 @@ body{
     background-color: var(--paleblue);
     font-family: 'Red Hat Display', serif;
 }
-
-.card{
-    background: url(../images/illustration-hero.svg) repeat-x;
+main{
+    max-width: 50vh;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
-
+.card{
+    background: url(../images/illustration-hero.svg) no-repeat;
+    max-width: 100%;
+}
 ul{
     list-style: none;
 }
-
 .lista{
     display: flex;    
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;        
+    justify-content: space-evenly;   
+    background-color: var(--palebluefundo); 
+    width: 50%;
+    height: 81px;    
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
 }
-
 .musicaicon{
-    background: url(../images/icon-music.svg) repeat-y;
+    background: url(../images/icon-music.svg);
+    width: 48px;
+    height: 48px;
+}
+#anualplano{
+    font-weight: 900;
+}
+#preco{
+    color: var(--desaturatedblue);
+}
+a{
+    font-weight: 700;
 }
 
 @media (min-width: 350px) {    
@@ -69,6 +93,8 @@ ul{
     }
     .plano{
         margin: 25px 0 25px 0;
+    }
+    .musicaicon{        
     }
     button{
         border: none;
